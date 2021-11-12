@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_border_box_light_green"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="8dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="0dp">
+
+    <TextView
+        android:id="@+id/ingredient_item_tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"
+        android:paddingTop="6dp"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ingredient_item_iv_close_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_orange_brown_close_24"
+        android:backgroundTint="@color/orange_brown"
+        android:clickable="true"
+        android:contentDescription="@string/description_filter_field_close_icon"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:textColor="@color/orange_brown" />
+</LinearLayout>
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_delete_all"
+        android:icon="@drawable/ic_white_round_delete_all_24"
+        android:title="@string/overflow_menu_delete_all"
+        app:showAsAction="ifRoom" />
+</menu>

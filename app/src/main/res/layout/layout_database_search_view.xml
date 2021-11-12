@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_layout_margin"
+        android:paddingEnd="0dp"
+        android:paddingStart="@dimen/standard_text_box_start_end_padding"
+        android:layout_marginBottom="@dimen/standard_layout_margin"
+        android:background="@drawable/rounded_border_box_light_green"
+        android:id="@+id/cl_filter_container">
+
+        <EditText
+            android:id="@+id/et_filter"
+            android:paddingTop="@dimen/standard_text_box_top_bottom_padding"
+            android:paddingBottom="@dimen/standard_text_box_top_bottom_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/iv_filter_close_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_orange_brown_close_24"
+            android:backgroundTint="@color/orange_brown"
+            android:clickable="true"
+            android:contentDescription="@string/description_filter_field_close_icon"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:textColor="@color/orange_brown"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

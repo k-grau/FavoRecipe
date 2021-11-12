@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/recipe_search_fragment">
+
+    <fragment
+        android:id="@+id/recipe_search_fragment"
+        android:name="com.karlgrauers.favorecipe.views.RecipeSearchFragment"
+        android:label="@string/label_recipe_api_search"
+        tools:layout="@layout/fragment_recipe_search">
+        <action
+            android:id="@+id/action_recipe_search_to_recipe_details"
+            app:destination="@id/recipe_details_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"  />
+    </fragment>
+    <fragment
+        android:id="@+id/recipe_details_fragment"
+        android:name="com.karlgrauers.favorecipe.views.RecipeDetailsFragment"
+        android:label="@string/label_recipe_details"
+        tools:layout="@layout/fragment_recipe_details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipe_favourites_fragment"
+        android:name="com.karlgrauers.favorecipe.views.RecipeFavouritesFragment"
+        android:label="@string/label_recipe_favourites"
+        tools:layout="@layout/fragment_recipe_favourites">
+        <action
+            android:id="@+id/action_recipe_favourites_to_recipe_details"
+            app:destination="@id/recipe_details_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"  />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopping_lists_fragment"
+        android:name="com.karlgrauers.favorecipe.views.ShoppingListsFragment"
+        android:label="@string/label_shopping_lists"
+        tools:layout="@layout/fragment_shopping_lists">
+        <action
+            android:id="@+id/action_shopping_lists_to_shopping_list_details"
+            app:destination="@+id/shopping_list_details_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"  />
+    </fragment>
+    <fragment
+        android:id="@+id/shopping_list_details_fragment"
+        android:name="com.karlgrauers.favorecipe.views.ShoppingListDetailsFragment"
+        android:label="@string/label_shopping_list_details"
+        tools:layout="@layout/fragment_shopping_list_details">
+        <action
+            android:id="@+id/action_shopping_lists_details_to_recipe_details"
+            app:destination="@+id/recipe_details_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"  />
+    </fragment>
+    <fragment
+        android:id="@+id/video_randomizer_fragment"
+        android:name="com.karlgrauers.favorecipe.views.VideoRandomizerFragment"
+        android:label="Popular food videos"
+        tools:layout="@layout/fragment_video_randomizer">
+    </fragment>
+</navigation>

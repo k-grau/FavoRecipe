@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_layout_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="30dp"
+        android:id="@+id/fragment_recipesearch_ll_parent_search_container">
+            <EditText
+                android:background="@drawable/rounded_border_box_light_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_dish_name"
+                android:paddingEnd="@dimen/standard_text_box_start_end_padding"
+                android:paddingStart="@dimen/standard_text_box_start_end_padding"
+                android:paddingTop="@dimen/standard_text_box_top_bottom_padding"
+                android:paddingBottom="@dimen/standard_text_box_top_bottom_padding"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/fragment_recipesearch_et_dish_search"
+                android:inputType="text"
+                android:autofillHints="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/fragment_hideable_search_container">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/standard_text_box_start_end_padding"
+                android:layout_marginBottom="@dimen/standard_layout_margin"
+                android:background="@drawable/rounded_border_box_light_green">
+
+                <EditText
+                    android:id="@+id/fragment_recipesearch_et_ingredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingTop="@dimen/standard_text_box_top_bottom_padding"
+                    android:paddingBottom="@dimen/standard_text_box_top_bottom_padding"
+                    android:hint="@string/hint_ingredients"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:inputType="text"
+                    android:autofillHints="" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/HalfRoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/btn_add_text"
+                android:layout_alignParentEnd="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.5"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"
+                android:enabled="false"
+                android:id="@+id/fragment_recipesearch_btn_add" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/fragment_recipesearch_fbl_ingredient_items_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"/>
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
+                app:cornerRadius="@dimen/heavy_corner_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_search_text"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/fragment_recipesearch_btn_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_items_list"/>
+</LinearLayout>

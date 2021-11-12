@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:itemBackground="?android:attr/selectableItemBackgroundBorderless">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/recipe_search_fragment"
+            android:icon="@drawable/ic_dark_gray_round_search_24"
+            android:title="@string/nav_menu_search_recipes"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/recipe_favourites_fragment"
+            android:icon="@drawable/ic_dark_gray_round_favorite_24"
+            android:title="@string/nav_menu_favourite_recipes"
+            android:menuCategory="secondary"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/shopping_lists_fragment"
+            android:icon="@drawable/ic_dark_grey_shopping_list"
+            android:title="@string/nav_menu_shopping_lists"
+            android:menuCategory="secondary"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/video_randomizer_fragment"
+            android:icon="@drawable/ic_dark_grey_round_ondemand_video_24"
+            android:title="@string/nav_menu_food_videos"
+            android:menuCategory="secondary"
+            android:checkable="true"/>
+        </group>
+</menu>

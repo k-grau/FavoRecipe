@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="light_corner_radius">8dp</dimen>
+    <dimen name="heavy_corner_radius">26dp</dimen>
+    <dimen name="item_header">20sp</dimen>
+    <dimen name="standard_text_box_start_end_padding">16sp</dimen>
+    <dimen name="standard_text_box_top_bottom_padding">16dp</dimen>
+    <dimen name="standard_layout_margin">8sp</dimen>
+    <dimen name="standard_heads_up_message_size">16sp</dimen>
+</resources>

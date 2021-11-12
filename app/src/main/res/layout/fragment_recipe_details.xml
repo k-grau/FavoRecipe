@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fragment_recipeview_container"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/fragment_recipeview_progress_bar"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal" />
+
+    <WebView
+        android:id="@+id/fragment_recipeview_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_recipeview_progress_bar"
+        android:visibility="gone"/>
+</RelativeLayout>
+

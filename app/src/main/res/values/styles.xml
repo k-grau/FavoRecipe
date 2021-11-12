@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ThemeOverlayFavoRecipe.Actionbar" parent="ThemeOverlay.MaterialComponents.ActionBar" >
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:textColor">@color/orange_brown</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FavoRecipe.PopupOverlay" parent="@style/Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">@drawable/rounded_box_light_green</item>
+        <item name="android:dropDownHorizontalOffset">-10dp</item>
+        <item name="android:dropDownVerticalOffset">10dp</item>
+    </style>
+
+    <style name="HalfRoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/HalfRoundedButtonShapeAppearance</item>
+    </style>
+    <style name="HalfRoundedButtonShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button</item>
+        <item name="dialogCornerRadius">@dimen/light_corner_radius</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialogTitleText</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.FavoRecipe.Dialog.Rounded</item>
+        <item name="android:background">@color/lightest_green</item>
+    </style>
+
+    <style name="AlertDialogTitleText" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/orange_brown</item>
+    </style>
+
+    <style name="Alert.Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/orange_brown</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.FavoRecipe.Dialog.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/light_corner_radius</item>
+    </style>
+</resources>

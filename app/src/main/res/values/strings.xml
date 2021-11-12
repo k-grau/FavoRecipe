@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE resources [
+    <!ENTITY appname "FavoRecipe">
+    <!ENTITY author "Karl Grauers">
+    ]>
+<resources>
+  <string name="app_name">&appname;</string>
+  <string name="btn_add_text">Add</string>
+  <string name="btn_search_text">Search</string>
+  <string name="bundle_key_recipe_details">com.karlgrauers.favorecipe.recipeDetails</string>
+  <string name="bundle_key_shopping_list_details">com.karlgrauers.favorecipe.shoppingListDetails</string>
+  <string name="dialog_tag">dialog</string>
+  <string name="error_header_db">Database error!</string>
+  <string name="error_message_connection_failed">Error! Failed to establish server connection.</string>
+  <string name="error_message_db_recipe_add_or_delete">Failed to %s %s %s favourite recipes.</string>
+  <string name="error_message_db_shopping_list_add_or_delete">Failed to %s shopping list for %s %s shopping lists.</string>
+  <string name="error_message_db_recipe_get_all">Failed to load favourite recipes.</string>
+  <string name="error_message_db_shopping_lists_get_all">Failed to load shopping lists.</string>
+  <string name="error_message_db_shopping_list_create_or_delete">Failed to %s shopping list for recipe %s.</string>
+  <string name="error_message_db_delete_all">Failed to delete %s.</string>
+  <string name="error_message_video_loading">Sorry! Failed to retrieve food videos.</string>
+  <string name="hint_dish_name">Search by dish…</string>
+  <string name="hint_ingredients">…and/or add ingredients</string>
+  <string name="hint_max_ingredients">Max ingredients added</string>
+  <string name="hint_filter_favourites">Filter favourites by recipe name…</string>
+  <string name="hint_filter_shopping_lists">Filter shopping lists by name…</string>
+  <string name="http_non_secure">http://</string>
+  <string name="http_secure">https://</string>
+  <string name="description_filter_field_close_icon">Clear icon</string>
+  <string name="image_view_dish_content_description">Image of dish from recipe</string>
+  <string name="youtube_view_video_item_content_description">Food video from youtube</string>
+  <string name="image_view_recipe_close_cross_description">Delete recipe from favourites</string>
+  <string name="intent_share_title">Share</string>
+  <string name="intent_share_type_text">text/plain</string>
+  <string name="instruction_swipe_refresh_videos">Swipe down to get %s new videos.</string>
+  <string name="label_recipe_api_search">&appname; | Search</string>
+  <string name="label_recipe_details">Recipe details</string>
+  <string name="label_recipe_favourites">Favourites</string>
+  <string name="label_shopping_lists">Shopping lists</string>
+  <string name="label_shopping_list_details">Shopping list</string>
+  <string name="nav_menu_favourite_recipes">Favourites</string>
+  <string name="nav_menu_food_videos">Food videos</string>
+  <string name="nav_menu_search_recipes">Search</string>
+  <string name="nav_menu_shopping_lists">Shopping lists</string>
+  <string name="no_recipes_found_tv_text">No recipes found!</string>
+  <string name="no_recipes_in_favourites">You have not added any favourite recipes yet!</string>
+  <string name="no_shopping_lists_created">You have not created any shopping lists yet!</string>
+  <string name="overflow_menu_add_to_favourites">Add to favourite recipes</string>
+  <string name="overflow_menu_create_shopping_list">Create shopping list</string>
+  <string name="overflow_menu_share_recipe">Share recipe</string>
+  <string name="overflow_menu_delete_all">Delete all</string>
+  <string name="overflow_menu_share_shopping_list">Share shopping list</string>
+  <string name="shopping_list_created_at">Created %s</string>
+  <string name="textview_view_shopping_list">View full shopping list</string>
+  <string name="textview_view_recipe">View recipe</string>
+  <string name="success_header_db_shopping_list_created">Shopping list created!</string>
+  <string name="success_message_db_recipe_add_or_delete">%s %s %s favourite recipes.</string>
+  <string name="success_message_db_shopping_list_add_or_delete">%s shopping list for %s %s shopping lists.</string>
+  <string name="success_message_db_shopping_list_created">Created shopping list for recipe \"%s\". Go to \"%s\" to view it.</string>
+  <string name="success_message_db_delete_all">Deleted all %s.</string>
+  <string name="warning_header_db_delete_all">Warning!</string>
+  <string name="warning_message_db_delete_all">This action will delete ALL %s. It can not be undone. Do you want to continue?</string>
+  <string name="shared_prefs_date_key">Date videos was retrieved from api</string>
+  <string name="shared_prefs_video_list_key">Videos retrieved from youtube api on daily basis</string>
+  <string name="shared_prefs_used_indexes_key">List of indexes used to randomize videos retrieved from youtube api</string>
+</resources>

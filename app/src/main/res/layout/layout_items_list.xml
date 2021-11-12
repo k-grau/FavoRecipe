@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_separator"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/standard_layout_margin"
+        android:layout_marginEnd="@dimen/standard_layout_margin"
+        android:background="@drawable/bottom_border_green"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb_result_progressbar"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_heads_up_message_size"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_border_box_light_green"
+        android:textColor="@color/orange_brown"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:id="@+id/tv_no_results" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sr_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="false">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:id="@+id/rw_results" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
+

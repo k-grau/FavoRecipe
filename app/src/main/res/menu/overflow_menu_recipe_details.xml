@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favourite"
+        android:icon="@drawable/ic_white_round_favorite_24"
+        android:title="@string/overflow_menu_add_to_favourites"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/icon_expand_overflowmenu"
+        android:title=""
+        android:icon="@drawable/ic_white_baseline_more_vert_24"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/action_share_recipe"
+                android:icon="@drawable/ic_orange_brown_share_24"
+                android:title="@string/overflow_menu_share_recipe" />
+
+            <item
+                android:id="@+id/action_create_shopping_list"
+                android:icon="@drawable/ic_orange_brown_create_shopping_list"
+                android:title="@string/overflow_menu_create_shopping_list" />
+        </menu>
+    </item>
+</menu>
+
+
