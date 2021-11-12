@@ -1,24 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Base application theme. -->
-    <style name="Theme.FavoRecipe" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.FavoRecipe" parent="Theme.MaterialComponents.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green</item>
-
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
         <item name="colorPrimaryVariant">@color/darker_green</item>
-        <item name="colorOnPrimary">@color/orange_brown</item>
+        <item name="colorOnPrimary">@color/white</item>
+
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/green</item>
         <item name="colorSecondaryVariant">@color/darker_green</item>
-        <item name="colorOnSecondary">@color/orange_brown</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="1">?attr/colorPrimaryVariant</item>
         <item name="actionBarTheme">@style/ThemeOverlayFavoRecipe.Actionbar</item>
-    </style>
-
-    <style name="ThemeOverlayFavoRecipe.Actionbar" parent="ThemeOverlay.MaterialComponents.ActionBar" >
-        <item name="android:textColorPrimary">@color/orange_brown</item>
-        <item name="android:textSize">10sp</item>
+        <item name="actionOverflowMenuStyle">@style/Theme.FavoRecipe.PopupOverlay</item>
     </style>
 </resources>
+
