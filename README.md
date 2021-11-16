@@ -12,7 +12,7 @@ Contains functionality for geting randomized popular food videos from youtube (1
 
 Videos are retrieved via the [youtube search api](https://developers.google.com/youtube/v3/docs/search/list). Videos are played using the youtubeplayer library created by [Pierfrancesco Soffritti](https://github.com/PierfrancescoSoffritti/android-youtube-player).
 
-Launcher icon created by [Weblays](https://about.webalys.com)
+Launcher icon created by [Weblays](https://about.webalys.com).
 
 App language is English and target SDK version is 31.
 
