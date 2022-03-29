@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     /**
      * Initialiserar navigationsfunktionalitet
      * och kopplar navigationskontroll och
